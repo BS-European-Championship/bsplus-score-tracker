@@ -1,9 +1,9 @@
 import * as e from "./event";
 
 export interface BSPlusEventHandlerSet {
-  roomJoined?: (body: e.RoomJoinedMessage) => void;
-  roomState?: (body: e.RoomStateMessage) => void;
-  score?: (body: e.ScoreMessage) => void;
-  playerJoined?: (body: e.PlayerJoinedMessage) => void;
-  playerUpdated?: (body: e.PlayerUpdatedMessage) => void;
+  roomJoined?: (body: e.RoomJoinedEvent) => void;
+  roomState?: (body: e.RoomStateEvent) => void;
+  score?: (body: e.ScoreEvent) => void;
+  playerJoined?: (body: e.PlayerJoinedEvent) => void;
+  playerUpdated?: (body: e.PlayerUpdatedEvent) => void;
 }

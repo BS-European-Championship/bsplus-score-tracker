@@ -1,7 +1,6 @@
 import { createSignal, onCleanup } from "solid-js";
 import "./App.css";
 import BSPlusClient from "./bsplus/client";
-import { ScoreEvent } from "./bsplus/event";
 import Highlighted from "./highlighted";
 
 function App() {
